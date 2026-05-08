@@ -17,4 +17,7 @@ jobs:
         run: docker build -t devops-app .
 
       - name: Test Container
-  run: docker run --rm devops-app python --version
+        run: docker run -d --name test-container devops-app
+             sleep 5
+             docker ps
+             docker stop test-container
