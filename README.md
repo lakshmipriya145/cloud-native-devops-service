@@ -23,3 +23,4 @@ https://cloud-native-devops-service.onrender.com
 ## 🚀 How to run locally
 docker build -t devops-app .
 docker run -p 5002:5001 devops-app
+
